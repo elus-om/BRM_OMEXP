@@ -1,0 +1,57 @@
+author: Pierre-Yves Hasan
+category: Advanced
+description: Starts the adaptive method procedure
+priority: 1
+controls:
+  - type: spinbox
+    var: up_value
+    min_val: 1
+    max_val: 100000
+    label: Number of incorrect answer(s) before increasing the target value
+    name: spinbox_trials_up
+    tooltip: 'Number of incorrect answer(s) before increasing the target value.'
+
+  - type: spinbox
+    var: down_value
+    min_val: 1
+    max_val: 100000
+    label: Number of correct answer(s) before lowering the target value
+    name: spinbox_trials_down
+    tooltip: 'Number of correct answer(s) before lowering the target value.'
+
+  - type: line_edit
+    var: target_up_down
+    label: Resulting target on the psychometric curve
+    name: edit_target_up_down
+    tooltip: 'For more information look Levitt 1971.'
+
+  - type: checkbox
+    var: step_value_change
+    label: ''
+    tooltip: 'Indicate whether the step value will change.'
+    name: checkbox_step_change
+
+  - type: line_edit
+    var: step_change_trial
+    label: Trials at which step size changes seperated by ";" 
+    tooltip: 'Trial at which step size changes.'
+    name: edit_step_change
+
+  - type: line_edit
+    var: target_variable
+    label: The tracked variable
+    tooltip: 'The tracked variable.'
+    name: edit_target
+
+  - type: combobox
+    var: change_modality
+    label: Count Reversals or Trials
+    options: ['Reversals', 'Trials']
+    tooltip: 'Count Reversals or Trials'
+    name: combobox_change_modality
+
+  - type: line_edit
+    var: start_track
+    label: The tracked variable initial value
+    tooltip: 'The tracked variable starts at this value.'
+    name: edit_start_track

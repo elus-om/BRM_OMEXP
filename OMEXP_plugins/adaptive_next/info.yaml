@@ -1,0 +1,11 @@
+author: Pierre-Yves Hasan
+category: Advanced
+description: Computes the next value for the adaptive procedure.
+priority: 1
+controls:
+  - type: line_edit
+    var: target_result
+    label: Variable containing the result (must be between 0 and 1 for HINTPro and boolean if adaptive)
+    name: edit_target_result
+    tooltip: 'The computation of the next tracked value based on the answer.'
+

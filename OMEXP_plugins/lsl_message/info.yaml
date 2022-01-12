@@ -1,0 +1,15 @@
+description: LSL Message plug-in.
+version: 0.1
+author: Eleonora Sulas 
+category: "LSL control"
+date: "2020"
+controls:
+-
+    type: "text"
+    label: "Message to log in the LSL recording"
+    
+- 
+  type: line_edit
+  var: lsl_message
+  label: Message
+

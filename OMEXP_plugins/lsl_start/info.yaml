@@ -1,0 +1,58 @@
+description: LSL record plug-in.
+version: 0.1
+author: Eleonora Sulas 
+category: "LSL control"
+date: "2020"
+controls:
+-
+    type: "text"
+    label: "Remember to run the program related to the inputs you want to acquire!"
+
+- 
+  type: line_edit
+  var: recording_path
+  label: Path to the LSL data
+  tooltip: Path to recordings in Pupil Capture
+
+- 
+  type: line_edit
+  var: folder_name
+  label: "Folder name related to this session"
+  tooltip: Folder name
+   
+-
+    label: Mouse
+    name: mouse_checkbox_widget
+    type: checkbox
+    var: mouse_checkbox
+
+-
+    label: "Keyboard"
+    name: keyboard_checkbox_widget
+    type: checkbox
+    var: keyboard_checkbox
+    
+-
+    label: "AudioCaptureWin"
+    name: AudioCaptureWin_checkbox_widget
+    type: checkbox
+    var: audiocapturewin_checkbox
+
+-
+    label: "Tobii"
+    name: pupillo_checkbox_widget
+    type: checkbox
+    var: pupillo_checkbox
+       
+-
+    label: "Logger"
+    name: Logger_checkbox_widget
+    type: checkbox
+    var: Logger_checkbox
+
+
+  
+    
+    
+    
+    

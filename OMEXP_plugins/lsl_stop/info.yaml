@@ -1,0 +1,9 @@
+description: LSL Stop plug-in.
+version: 0.1
+author: Eleonora Sulas 
+category: "LSL control"
+date: "2020"
+controls:
+-
+    type: "text"
+    label: "Stop the Lab Streaming Layer recording"
