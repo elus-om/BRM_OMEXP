@@ -40,7 +40,7 @@ data_files = [(
 
 setup(
     name='opensesame-plugin-omexp',
-    version='0.1.1post1',
+    version='0.1.1post2',
     description='BRM_OMEXP plugins for OpenSesame',
     long_description_content_type = 'text/markdown',
     long_description=LONG_DESCRIPTION,
