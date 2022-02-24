@@ -30,7 +30,13 @@ import pip
 pip.main(['install','opensesame-plugin-omexp'])
 ```
 
-The code are also available in github in the (https://github.com/elus-om/BRM_OMEXP)
+or
+```python
+import pip
+pip.main(['install','-i','https://test.pypi.org/simple/','--extra-index-url','https://pypi.org/simple/','opensesame-plugin-omexp==0.1.1.post7'])
+```
+
+The code are also available in github: (https://github.com/elus-om/BRM_OMEXP)
 
 ***
 

@@ -40,7 +40,7 @@ data_files = [(
 
 setup(
     name='opensesame-plugin-omexp',
-    version='0.1.1post2',
+    version='0.1.1post7',
     description='BRM_OMEXP plugins for OpenSesame',
     long_description_content_type = 'text/markdown',
     long_description=LONG_DESCRIPTION,
@@ -48,6 +48,8 @@ setup(
     author_email='elus@oticonmedical.com',
     url='https://github.com/elus-om/BRM_OMEXP',
     install_requires=[
+          'numba>=0.51.2',
+          'liesl>=0.3.4.6',
           'rtmixer>=0.1.2',
           'resampy>=0.2.2',
           'soundfile>=0.10.3.post1',
