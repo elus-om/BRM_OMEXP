@@ -1,0 +1,6 @@
+dependencies:
+- liesl=0.3.4.6 (Successfully installed liesl-0.3.4.8 pylsl-1.14.0 pyxdf-1.16.3)
+- rtmixer=0.1.2
+- resampy=0.2.2
+- soundfile=0.10.3.post1
+- sounddevice=0.4.1

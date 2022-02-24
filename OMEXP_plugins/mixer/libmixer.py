@@ -1,12 +1,21 @@
-#-*- coding:utf-8 -*-
-
-"""
-Mixer library for the mixer plugin
-
-Written by Pierre-Yves Hasan (PHAS)
-Date created: 23-04-2019
-(c) Copyright Oticon Medical
-"""
+'''
+* All Rights Reserved.
+* 
+* NOTICE: All information contained herein is, and remains
+* the property of Oticon Medical A/S,if any.
+* The intellectual and technical concepts contained
+* herein are proprietary to Oticon Medical A/S
+* and may be covered by U.S. and other Patents (e.g. EP, CN or AU patents),
+* patents in process, and are protected by trade secret or copyright law.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Oticon Medical.
+*
+* Oticon Medical A/S, hereby claims all copyright interest in the program “libmixer.py”.
+*
+* Copyright,2020, Oticon Medical A/S.
+*
+'''
 
 from threading import Thread
 import numpy as np

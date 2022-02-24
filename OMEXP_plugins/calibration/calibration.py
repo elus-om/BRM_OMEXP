@@ -5,8 +5,8 @@ from libopensesame import debug
 from libopensesame import item, widgets
 from qtpy import QtWidgets, QtGui, QtCore
 import os
-import opensesame_plugins.mixer.libmixer as mx
-import opensesame_plugins.calibration.libcalibration as calib
+import share.opensesame_plugins.mixer.libmixer as mx
+import share.opensesame_plugins.calibration.libcalibration as calib
 from libqtopensesame.items.qtitem import requires_init
 from libqtopensesame.items.qtplugin import qtplugin
 from libqtopensesame.misc.translate import translation_context

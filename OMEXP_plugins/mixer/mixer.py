@@ -8,8 +8,8 @@ from libqtopensesame._input.pool_select import pool_select
 from libqtopensesame.items.qtplugin import qtplugin
 from libqtopensesame.misc.translate import translation_context
 from libopensesame.exceptions import osexception
-import opensesame_plugins.mixer.libmixer as mx
-from opensesame_plugins.mixer.libqt import LimistDelegate
+import share.opensesame_plugins.mixer.libmixer as mx
+from share.opensesame_plugins.mixer.libqt import LimistDelegate
 _ = translation_context(u'mixer', category=u'item')
 
 class mixer(item.item):
@@ -180,6 +180,29 @@ class qtmixer(mixer, qtplugin):
         self.create_source_table()
         self.table.cellChanged.connect(self.apply_table_changes) 
         # update script after a change
+
+    def add_table_control(self, row, column, header = u'', vars = None):
+
+        """
+        desc:
+            Adds a QTableWidget control that is linked to a variable.
+
+        arguments:
+            row:                  Number of rows.
+            column:             Number of columns.
+            column names:    Name to display for the columns
+        """
+
+        table = QtWidgets.QTableWidget(row, column)
+        table.verticalHeader().setVisible(False)
+        table.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.Stretch)
+        table.horizontalHeader().setStyleSheet("color:black;"
+                                               "background-color: lightblue;"
+                                               "border-bottom: 1px solid grey")
+        table.setHorizontalHeaderLabels(header)
+        self.edit_vbox.addWidget(table) # Enable completion of the bottom of the window
+        self.vars = vars
+        return table
 
     def create_source_table(self):
         # Section for file selections

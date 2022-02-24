@@ -1,4 +1,3 @@
-# -*- coding: cp1252 -*-
 '''
 * All Rights Reserved.
 * 
@@ -12,7 +11,7 @@
 * is strictly forbidden unless prior written permission is obtained
 * from Oticon Medical.
 *
-* Oticon Medical A/S, hereby claims all copyright interest in the program ìLibCalibration.pyî.
+* Oticon Medical A/S, hereby claims all copyright interest in the program ‚Äúlibcalibration.py‚Äù.
 *
 * Copyright,2020, Oticon Medical A/S.
 *
@@ -21,7 +20,7 @@
 from qtpy import QtWidgets, QtGui, QtCore 
 import numpy as np
 import os
-import opensesame_plugins.mixer.libmixer as mx
+import share.opensesame_plugins.mixer.libmixer as mx
 
 class CalibrationApp():
     """

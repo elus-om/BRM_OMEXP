@@ -1,5 +1,5 @@
 #-*- coding:utf-8 -*-
-import opensesame_plugins.lsl_start.liblsl as lblsl
+import share.opensesame_plugins.lsl_start.liblsl as lblsl
 import numpy as np
 from libopensesame.py3compat import *
 from libopensesame.item import item
@@ -14,7 +14,7 @@ class lsl_start(item):
         self.var.mouse_checkbox = 'no'  
         self.var.Logger_checkbox = 'no' 
         self.var.pupillo_checkbox = 'no'  
-        self.var.recording_path = os.path.expanduser(os.path.join("~", 'Documents/LSLrecordings/'))
+        self.var.recording_path = 'C:\\Users\\Public\\OMEXP\\LSL'
         self.var.folder_name = 'RecordingLSL_0'          
      
     def prepare(self):

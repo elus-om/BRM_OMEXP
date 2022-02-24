@@ -1,0 +1,65 @@
+3.3.8
+
+The test can be open and can be run until the end
+
+item-stack: 
+time: Thu Feb 24 11:00:52 2022
+exception type: TypeError
+exception message: 'FailedToGetWorkspaceVariable' object is not iterable
+
+Traceback:
+  File "C:\Program Files (x86)\OpenSesame338\Lib\site-packages\libqtopensesame\extensions\_extension_manager.py", line 181, in fire
+    ext.fire(event, **kwdict)
+  File "C:\Program Files (x86)\OpenSesame338\Lib\site-packages\libqtopensesame\misc\base_subcomponent.py", line 62, in fire
+    getattr(self, u'event_%s' % event)(**kwdict)
+  File "C:\Program Files (x86)\OpenSesame338\share\opensesame_extensions\after_experiment\after_experiment.py", line 51, in event_end_experiment
+    self.handle_success()
+  File "C:\Program Files (x86)\OpenSesame338\share\opensesame_extensions\after_experiment\after_experiment.py", line 154, in handle_success
+    if self._extra_data_files:
+  File "C:\Program Files (x86)\OpenSesame338\share\opensesame_extensions\after_experiment\after_experiment.py", line 102, in _extra_data_files
+    path for path in data_files
+TypeError: 'FailedToGetWorkspaceVariable' object is not iterable
+
+3.3.9
+
+The test can be open and can be run until the end
+
+item-stack: 
+time: Thu Feb 24 11:14:39 2022
+exception type: AttributeError
+exception message: 'FailedToGetWorkspaceVariable' object has no attribute 'startswith'
+
+Traceback:
+  File "C:\Program Files (x86)\OpenSesame339\Lib\site-packages\libqtopensesame\extensions\_extension_manager.py", line 181, in fire
+    ext.fire(event, **kwdict)
+  File "C:\Program Files (x86)\OpenSesame339\Lib\site-packages\libqtopensesame\misc\base_subcomponent.py", line 62, in fire
+    getattr(self, u'event_%s' % event)(**kwdict)
+  File "C:\Program Files (x86)\OpenSesame339\share\opensesame_extensions\after_experiment\after_experiment.py", line 141, in event_after_experiment_open_logfile
+    misc.open_url(self._logfile)
+  File "C:\Program Files (x86)\OpenSesame339\Lib\site-packages\libopensesame\misc.py", line 316, in open_url
+    if url.startswith(u'http://') or url.startswith(u'https://'):
+AttributeError: 'FailedToGetWorkspaceVariable' object has no attribute 'startswith'
+
+3.3.10
+
+The test can be open and can be run until the end
+
+Extension error
+
+item-stack: 
+time: Thu Feb 24 11:19:08 2022
+exception type: TypeError
+exception message: 'FailedToGetWorkspaceVariable' object is not iterable
+
+Traceback:
+  File "C:\Program Files (x86)\OpenSesame338\Lib\site-packages\libqtopensesame\extensions\_extension_manager.py", line 181, in fire
+    ext.fire(event, **kwdict)
+  File "C:\Program Files (x86)\OpenSesame338\Lib\site-packages\libqtopensesame\misc\base_subcomponent.py", line 62, in fire
+    getattr(self, u'event_%s' % event)(**kwdict)
+  File "C:\Program Files (x86)\OpenSesame338\share\opensesame_extensions\after_experiment\after_experiment.py", line 51, in event_end_experiment
+    self.handle_success()
+  File "C:\Program Files (x86)\OpenSesame338\share\opensesame_extensions\after_experiment\after_experiment.py", line 154, in handle_success
+    if self._extra_data_files:
+  File "C:\Program Files (x86)\OpenSesame338\share\opensesame_extensions\after_experiment\after_experiment.py", line 102, in _extra_data_files
+    path for path in data_files
+TypeError: 'FailedToGetWorkspaceVariable' object is not iterable

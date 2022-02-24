@@ -1,5 +1,4 @@
 #-*- coding:utf-8 -*-
-
 from libopensesame.py3compat import *
 from libopensesame import debug
 from libopensesame.exceptions import osexception
@@ -100,6 +99,42 @@ class qtadaptive_init(adaptive_init, qtautoplugin):
         adaptive_init.__init__(self, name, experiment, string)
         qtautoplugin.__init__(self, plugin_file = __file__)
 
+    def add_control_line(self, label, widgets, tooltip=None, min_width=200,
+        info=None):
+        """
+        desc:
+            Adds a multiple generic control QWidget on the same line.
+
+        arguments:
+            label:    A text label that will be on the left of the first widget.
+            widgets:    QWidgets to be put in line.
+
+        keywords:
+            tooltip:    A tooltip text.
+            min_width:    A minimum width for the widget.
+            info:        Additional info, to be presented to the right of the
+                        control.
+        """
+        row = self.edit_grid.rowCount()
+        hbox = QtWidgets.QHBoxLayout()
+        hbox.setContentsMargins(0,0,0,0)
+        hbox.setSpacing(12)
+        label = QtWidgets.QLabel(label)
+        #label.setAlignment(self.edit_grid.labelAlignment())
+        for wid in widgets:
+            #if tooltip is not None:
+            #    try:
+            #        wid.setToolTip(tooltip)
+            #    except:
+            #        pass
+            if isinstance(min_width, int):
+                wid.setMinimumWidth(min_width)
+            hbox.addWidget(wid)
+            self.set_focus_widget(wid)
+        container = QtWidgets.QWidget()
+        container.setLayout(hbox)
+        self.edit_grid.insertRow(row, label, container)
+
     def init_edit_widget(self):
 
         super().init_edit_widget()
@@ -120,7 +155,7 @@ class qtadaptive_init(adaptive_init, qtautoplugin):
         self.edit_step_end = qtautoplugin.add_line_edit_control(
             self,
             u'step_value_end',
-            u'The new step sizes seperated by ";"',
+            u'',
             tooltip = u'The step to apply to the tracked variable.'
             )
         
@@ -139,9 +174,6 @@ class qtadaptive_init(adaptive_init, qtautoplugin):
             min_width= 50
             )
         
-        self.edit_grid.removeRow(0) # spinbox_trials_up
-        self.edit_grid.removeRow(0) # spinbox_trials_down
-
         self.add_control_line(
             u'Resulting target on the psychometric curve',
             [
@@ -150,8 +182,7 @@ class qtadaptive_init(adaptive_init, qtautoplugin):
             min_width = 50 
             )
         
-        self.edit_grid.removeRow(0) # target
-        
+              
         
         self.add_control_line(
             u'Apply a stepsize change',
@@ -166,39 +197,16 @@ class qtadaptive_init(adaptive_init, qtautoplugin):
             min_width = 50 
             )
         
-        self.edit_grid.removeRow(0) # target
-        self.edit_grid.removeRow(0) # target
-            
-        # Move rows for organisation 
-        line_tracked = self.edit_grid.takeRow(0) # Tracked variable
-        self.edit_grid.insertRow(
-            self.edit_grid.rowCount() - 1,
-            line_tracked.labelItem.widget(), 
-            line_tracked.fieldItem.widget()
-            )
+           
+        # Make it prettier
+        self.edit_grid.removeItem(self.edit_grid.takeAt(0)) # spinbox_trials_down
+        self.edit_grid.removeItem(self.edit_grid.takeAt(0))
+        self.edit_grid.removeItem(self.edit_grid.takeAt(0))
+        self.edit_grid.removeItem(self.edit_grid.takeAt(0))
+        self.edit_grid.removeItem(self.edit_grid.takeAt(0))
+        self.edit_grid.removeItem(self.edit_grid.takeAt(0))
+        self.edit_grid.removeItem(self.edit_grid.takeAt(0))
         
-        line_tracked2 = self.edit_grid.takeRow(1) # Value track
-        self.edit_grid.insertRow(
-            self.edit_grid.rowCount() - 1,
-            line_tracked2.labelItem.widget(), 
-            line_tracked2.fieldItem.widget()
-            )
-
-        line_tracked2 = self.edit_grid.takeRow(1) # Initial step size
-        self.edit_grid.insertRow(
-            self.edit_grid.rowCount() - 1,
-            line_tracked2.labelItem.widget(), 
-            line_tracked2.fieldItem.widget()
-            )
-        
-        line_tracked = self.edit_grid.takeRow(0) # Tracked variable
-        self.edit_grid.insertRow(
-            self.edit_grid.rowCount() - 4,
-            line_tracked.labelItem.widget(), 
-            line_tracked.fieldItem.widget()
-            )
-        
-        self.edit_grid.removeRow(0) # target
         
         # Add spacers
         self.edit_grid.insertRow(

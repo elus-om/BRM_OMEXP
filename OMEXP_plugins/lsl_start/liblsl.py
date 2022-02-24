@@ -11,7 +11,7 @@
 * is strictly forbidden unless prior written permission is obtained
 * from Oticon Medical.
 *
-* Oticon Medical A/S, hereby claims all copyright interest in the program “LibLSL.py”.
+* Oticon Medical A/S, hereby claims all copyright interest in the program “liblsl.py”.
 *
 * Copyright,2020, Oticon Medical A/S.
 *

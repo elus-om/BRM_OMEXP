@@ -7,7 +7,7 @@ controls:
     var: up_value
     min_val: 1
     max_val: 100000
-    label: Number of incorrect answer(s) before increasing the target value
+    label: 
     name: spinbox_trials_up
     tooltip: 'Number of incorrect answer(s) before increasing the target value.'
 
@@ -15,19 +15,19 @@ controls:
     var: down_value
     min_val: 1
     max_val: 100000
-    label: Number of correct answer(s) before lowering the target value
+    label: 
     name: spinbox_trials_down
     tooltip: 'Number of correct answer(s) before lowering the target value.'
 
   - type: line_edit
     var: target_up_down
-    label: Resulting target on the psychometric curve
+    label: 
     name: edit_target_up_down
     tooltip: 'For more information look Levitt 1971.'
 
   - type: checkbox
     var: step_value_change
-    label: ''
+    label: 
     tooltip: 'Indicate whether the step value will change.'
     name: checkbox_step_change
 

@@ -1,5 +1,5 @@
 #-*- coding:utf-8 -*-
-import opensesame_plugins.lsl_init.liblsl as lblsl
+import share.opensesame_plugins.lsl_start.liblsl as lblsl
 from libopensesame.py3compat import *
 from libopensesame.item import item
 from libqtopensesame.items.qtautoplugin import qtautoplugin
