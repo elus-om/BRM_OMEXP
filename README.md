@@ -31,7 +31,7 @@ The plugins are available on the Python Package Index. To install the release, p
 
 ```python
 import pip
-pip.main(['install','opensesame-plugin-mousetrap'])
+pip.main(['install','opensesame-plugin-omexp'])
 ```
 
 ***
