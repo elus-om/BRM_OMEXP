@@ -11,18 +11,14 @@ The list of plugins added to OpenSesame to constitute OMEXP are summarized below
 - LSL stop.
 - Adaptive init.
 - Adaptive next.
-- 
+
 ***
 ## General information
 
-The additional plugins were developed by Eleonora Sulas and Pierre-Yves Hasan. 
+The code is published under the GNU General Public License (version 3).
+However, the standalone libraries are Oticon Medical Copyrighted.
 
-It is published under the GNU General Public License (version 3).
-However, two of the libraries implemented duringthe development of the new plugins are Oticon Medical Copyrighted.
 
-If you use any of the additional plugins in your published research, we kindly ask that you cite it as follows:
-
-_Streamlining Experiment Design in Cognitive Hearing Science using OpenSesame_
 
 ***
 ## Installation
@@ -34,6 +30,8 @@ import pip
 pip.main(['install','opensesame-plugin-omexp'])
 ```
 
+The code are also available in github in the (https://github.com/elus-om/BRM_OMEXP)
+
 ***
 
 ## Validation
@@ -42,7 +40,5 @@ The work presented in _Streamlining Experiment Design in Cognitive Hearing Scien
 
 ***
 ## Example
-We exemplify the use of this extended OpenSesame platform with an implementation of the 3-alternative forced choice amplitude modulation detection test.
+We exemplify the use of this extended OpenSesame platform with an implementation of the 3-alternative forced choice amplitude modulation detection test. The test is shared in the example folder.
 
-***
-## Acknowledgments
