@@ -204,8 +204,7 @@ class qtadaptive_init(adaptive_init, qtautoplugin):
         self.edit_grid.removeItem(self.edit_grid.takeAt(0))
         self.edit_grid.removeItem(self.edit_grid.takeAt(0))
         self.edit_grid.removeItem(self.edit_grid.takeAt(0))
-        self.edit_grid.removeItem(self.edit_grid.takeAt(0))
-        self.edit_grid.removeItem(self.edit_grid.takeAt(0))
+        
         
         
         # Add spacers

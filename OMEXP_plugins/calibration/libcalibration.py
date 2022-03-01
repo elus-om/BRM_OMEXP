@@ -79,10 +79,10 @@ class CalibrationApp():
         # Play/Stop button
         self.play_stop_button = QtWidgets.QPushButton()
         # Load the different icons
-        path_play = os.path.join(self.dirname, 'other/play.svg')
+        path_play = os.path.join(self.dirname, 'other/play.png')
         pixmap_play = QtGui.QPixmap(path_play)
 
-        path_pause = os.path.join(self.dirname, 'other/pause.svg')
+        path_pause = os.path.join(self.dirname, 'other/pause.png')
         pixmap_pause = QtGui.QPixmap(path_pause)
 
         self.play_stop_ico = [

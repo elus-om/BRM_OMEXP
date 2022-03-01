@@ -33,7 +33,7 @@ controls:
 
   - type: line_edit
     var: step_change_trial
-    label: Trials at which step size changes seperated by ";" 
+    label: 
     tooltip: 'Trial at which step size changes.'
     name: edit_step_change
 
