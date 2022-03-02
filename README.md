@@ -32,11 +32,11 @@ The plugins are available on the Python Package Index. To install the release, p
 
 ```python
 import pip
-pip.main(['install','-i','https://test.pypi.org/simple/','--extra-index-url','https://pypi.org/simple/','opensesame-plugin-omexp==0.1.1.post7'])
+pip.main(['install','-i','https://test.pypi.org/simple/','--extra-index-url','https://pypi.org/simple/','opensesame-plugin-omexp==0.1.3'])
 ```
 or from the command window (run as administrator):
 ```python
-python -m pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ opensesame-plugin-omexp==0.1.1.post7
+python -m pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ opensesame-plugin-omexp==0.1.3
 ```
 
 Opensesame needs to be restarted to see the plugins.
@@ -51,4 +51,8 @@ The code is available in github: (https://github.com/elus-om/BRM_OMEXP)
 ***
 ## Example
 We exemplify the use of this extended OpenSesame platform with an implementation of the 3-alternative forced choice amplitude modulation detection test. The test is shared in the example folder in GitHub.
+
+## Acknowledgement
+
+OMEXP plugins extends OpenSesame platform developed by the development team led by Sebastiaan Mathôt. 
 
