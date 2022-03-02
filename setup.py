@@ -40,7 +40,7 @@ data_files = [(
 
 setup(
     name='opensesame-plugin-omexp',
-    version='0.1.3',
+    version='0.1.3post1',
     description='BRM_OMEXP plugins for OpenSesame',
     long_description_content_type = 'text/markdown',
     long_description=LONG_DESCRIPTION,
@@ -54,6 +54,8 @@ setup(
           'resampy>=0.2.2',
           'soundfile>=0.10.3.post1',
           'sounddevice>=0.4.1',
+          'scipy==1.1.0',
+          'numpy==1.18',
       ],
     classifiers=[
         'Intended Audience :: Science/Research',

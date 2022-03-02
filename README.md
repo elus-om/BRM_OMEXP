@@ -26,17 +26,17 @@ However, the standalone libraries are Oticon Medical Copyrighted.
 ## Installation
 
 We introduce a set of plugins for OpenSesame. For installing Opensesame: https://github.com/open-cogsci/OpenSesame/releases?page=2 .
-The plugins are compatible with Opensesame 3.2.7 and 3.2.8.
+The plugins are compatible with Opensesame 3.2.7 and 3.2.8 based on python 3.
 
 The plugins are available on the Python Package Index. To install the release, please run the following commands in Opensesame's debug window:
 
 ```python
 import pip
-pip.main(['install','-i','https://test.pypi.org/simple/','--extra-index-url','https://pypi.org/simple/','opensesame-plugin-omexp==0.1.3'])
+pip.main(['install','-i','https://test.pypi.org/simple/','--extra-index-url','https://pypi.org/simple/','opensesame-plugin-omexp==0.1.3post1'])
 ```
-or from the command window (run as administrator):
+or from the command window (run as administrator) from the Opensesame folder:
 ```python
-python -m pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ opensesame-plugin-omexp==0.1.3
+python.exe -m pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ opensesame-plugin-omexp==0.1.3post1
 ```
 
 Opensesame needs to be restarted to see the plugins.
