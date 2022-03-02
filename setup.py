@@ -8,7 +8,7 @@ from setuptools import setup
 
 PLUGIN_DIR = "OMEXP_plugins"
 
-with open("README.md") as f:
+with open("READMEpypi.md") as f:
     LONG_DESCRIPTION = f.read()
 
 def find_files(directory):
@@ -40,7 +40,7 @@ data_files = [(
 
 setup(
     name='opensesame-plugin-omexp',
-    version='0.1.3post1',
+    version='0.1.4post1',
     description='BRM_OMEXP plugins for OpenSesame',
     long_description_content_type = 'text/markdown',
     long_description=LONG_DESCRIPTION,
@@ -55,7 +55,7 @@ setup(
           'soundfile>=0.10.3.post1',
           'sounddevice>=0.4.1',
           'scipy==1.1.0',
-          'numpy==1.18',
+          'numpy==1.18.1',
       ],
     classifiers=[
         'Intended Audience :: Science/Research',

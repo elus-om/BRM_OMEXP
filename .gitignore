@@ -2,3 +2,4 @@ dist
 opensesame_plugin_omexp.egg-info
 example/*.csv
 packaging.txt
+READMEpypi.md
