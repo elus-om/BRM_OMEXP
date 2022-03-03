@@ -32,11 +32,13 @@ The plugins are available on the Python Package Index. To install the release, p
 
 ```python
 import pip
-pip.main(['install','-i','https://test.pypi.org/simple/','--extra-index-url','https://pypi.org/simple/','opensesame-plugin-omexp==0.1.4.post1'])
+pip.main(['install','opensesame-plugin-omexp'])
 ```
+
 or from the command window (run as administrator) from the Opensesame folder:
+
 ```python
-python.exe -m pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ opensesame-plugin-omexp==0.1.4.post1
+python.exe -m pip install opensesame-plugin-omexp
 ```
 
 Opensesame needs to be restarted to see the plugins.
