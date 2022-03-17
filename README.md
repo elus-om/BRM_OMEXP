@@ -52,7 +52,14 @@ The code is available in github: (https://github.com/elus-om/BRM_OMEXP)
 
 ***
 ## Example
+
 We exemplify the use of this extended OpenSesame platform with an implementation of the 3-alternative forced choice amplitude modulation detection test. The test is shared in the example folder in GitHub.
+
+To be able to record from Lab Streaming Layer library, your should run the related App. Regarding the 3 AFC amplitude modulation detection test, you need to download and run the App AudioCaptureWin (https://github.com/labstreaminglayer/App-AudioCapture). 
+
+The data will be saved in a XDF file the in the specified path chosen in the LSL record plugin. 
+
+***
 
 ## Acknowledgement
 
