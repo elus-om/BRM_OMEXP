@@ -181,7 +181,7 @@ class qtadaptive_init(adaptive_init, qtautoplugin):
                 ],
             min_width = 50 
             )
-        
+        self.edit_target_up_down.setDisabled(True)
               
         
         self.add_control_line(

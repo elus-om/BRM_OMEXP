@@ -79,10 +79,10 @@ class CalibrationApp():
         # Play/Stop button
         self.play_stop_button = QtWidgets.QPushButton()
         # Load the different icons
-        path_play = os.path.join(self.dirname, 'other/play.png')
+        path_play = os.path.join(self.dirname, 'play.png')
         pixmap_play = QtGui.QPixmap(path_play)
 
-        path_pause = os.path.join(self.dirname, 'other/pause.png')
+        path_pause = os.path.join(self.dirname, 'pause.png')
         pixmap_pause = QtGui.QPixmap(path_pause)
 
         self.play_stop_ico = [
@@ -252,6 +252,6 @@ class CalibrationApp():
 
 if __name__ == '__main__':
 
-    a = CalibrationApp('other/white_noise.wav')
+    a = CalibrationApp('white_noise.wav')
     ret = a.run()
     print(ret)

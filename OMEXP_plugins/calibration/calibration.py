@@ -73,7 +73,7 @@ class qtcalibration(calibration, qtplugin):
         calibration.__init__(self, name, experiment, string)
         qtplugin.__init__(self, __file__)
 
-        noisefile = os.path.join(dirname, 'other/white_noise.wav')
+        noisefile = os.path.join(dirname, 'white_noise.wav')
         if u'white_noise.wav' not in self.experiment.pool:
             self.experiment.pool.add(noisefile, u'white_noise.wav')
 
